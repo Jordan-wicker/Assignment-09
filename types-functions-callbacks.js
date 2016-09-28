@@ -90,6 +90,9 @@ console.assert(isNegative(10) === false)
 console.assert(isNegative(0) === false)
 console.assert(isNegative(-999) === true)
 
+var isNegative = function () {
+   if (typeof isNegative < 0) log('true')
+}
 
 // Now, modify your sum function again, so that it
 // will return null if any of the inputs is negative.
@@ -97,6 +100,11 @@ console.assert(isNegative(-999) === true)
 // function inside your sum funciton ***
 
 console.assert(sum(5,-5) === null)
+
+var sum = function (numOne , numTwo) {
+	var total = (numOne + numTwo)
+    return total}
+    if ()
 
 
 // Part 5
