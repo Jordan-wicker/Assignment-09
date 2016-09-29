@@ -74,12 +74,12 @@ console.assert(sum(true, 5) === null);
 
 var sum = function (numOne , numTwo) {
 	var total = (numOne + numTwo)
-    return total}
+    return total
 
-        if (typeof numOne, numTwo !== ('number') {
-        log('null')
-        }
-
+      //   if (typeof numOne, numTwo !== ('number') {
+      //   return('null')
+      //   }
+}
 
 // Part 4
 
@@ -90,9 +90,9 @@ console.assert(isNegative(10) === false)
 console.assert(isNegative(0) === false)
 console.assert(isNegative(-999) === true)
 
-var isNegative = function () {
-   if (typeof isNegative < 0) log('true')
-}
+// var isNegative = function (number) {
+//    if (number < 0) return('true')
+// } if (number >= 0) return ('false')
 
 // Now, modify your sum function again, so that it
 // will return null if any of the inputs is negative.
@@ -103,8 +103,12 @@ console.assert(sum(5,-5) === null)
 
 var sum = function (numOne , numTwo) {
 	var total = (numOne + numTwo)
-    return total}
-    if ()
+        if ( numOne , numTwo < 0)
+            return ('null')}
+
+		return total
+
+
 
 
 // Part 5
@@ -125,10 +129,29 @@ console.assert(minimum(1000,-2,99,50) === -2)
 // return true if either input is a string, but not
 // both or neither.
 
+
+
 console.assert(justOneString('a',5) === true)
 console.assert(justOneString(6,'dotron') === true)
 console.assert(justOneString('peanut','butter') === false)
 console.assert(justOneString(8,null) === false)
+
+var justOneString = function (inputOne, inputTwo){
+   if (typeof inputOne )
+   var justOneString = function (inputOne, inputTwo){
+
+      if (typeof inputOne  === 'string' && typeof inputTwo === 'string'   ){
+      	return false
+      }
+   	if (typeof inputOne === 'string' || typeof inputTwo === 'string'){
+           return true
+       }
+
+       return false
+
+
+   }
+
 
 
 // Part 8
